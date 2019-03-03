@@ -1,0 +1,16 @@
+<md-table v-model="profiles" md-sort="name" md-sort-order="asc" md-card md-fixed-header>
+  <md-table-toolbar>
+    <div class="md-toolbar-section-start">
+      <h1 class="md-title">Users</h1>
+    </div>
+    <md-field md-clearable class="md-toolbar-section-end">
+      <md-input placeholder="Search by name..." v-model="search" @input="onSearch"  />
+    </md-field>
+  </md-table-toolbar>
+  <md-table-row slot="md-table-row" slot-scope="{ item }">
+    <md-table-cell md-label="Name" md-sort-by="name">{{ item.name }}</md-table-cell>
+    <md-table-cell md-label="Email" md-sort-by="email">{{ item.email }}</md-table-cell>
+    <md-table-cell md-label="Gender" md-sort-by="gender">{{ item.gender }}</md-table-cell>
+    <md-table-cell md-label="Job Title" md-sort-by="title">{{ item.title }}</md-table-cell>
+  </md-table-row>
+</md-table>
