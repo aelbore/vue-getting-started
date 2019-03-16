@@ -3,17 +3,17 @@
     <md-table md-card>
 
       <md-table-row>
-        <md-table-head hidden md-numeric>ID</md-table-head>
         <md-table-head>Name</md-table-head>
-        <md-table-head>Title</md-table-head>
         <md-table-head>Email</md-table-head>
+        <md-table-head>Gender</md-table-head>
+        <md-table-head>Title</md-table-head>
       </md-table-row>
 
-      <md-table-row  v-for="(profile, index) in profiles" v-bind:key="index">
-        <md-table-cell hidden md-numeric>{{ profile.id }}</md-table-cell>
-        <md-table-cell>{{ profile.name }}</md-table-cell>
-        <md-table-cell>{{ profile.title }}</md-table-cell>
-        <md-table-cell>{{ profile.email }}</md-table-cell>
+      <md-table-row  v-for="(item, index) in profiles" v-bind:key="index">
+        <md-table-cell md-sort-by="name">{{ item.name }}</md-table-cell>
+        <md-table-cell md-sort-by="email">{{ item.email }}</md-table-cell>
+        <md-table-cell md-sort-by="gender">{{ item.gender }}</md-table-cell>
+        <md-table-cell md-sort-by="title">{{ item.title }}</md-table-cell>
       </md-table-row>
 
     </md-table>
@@ -32,7 +32,9 @@ export default {
   },
   data() {
     return {
-      profiles: []
+      profiles: [],
+      search: null,
+      searched: [],
     }
   }
 }

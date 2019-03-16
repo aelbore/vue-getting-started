@@ -13,9 +13,13 @@ Using 3rd Party Libraries
 
   Vue.use(VueMaterial)
   ```
-* Now you can use material component
+* Now you can use material design component
 * Change your table list to material table (Please see `material.html`)
   - We can use `v-for` to loop thru list
+
+<br />
+Using `v-model` directive
+------------
 * Using `v-model` to bind the list to the marterial table (Please see `material-v-model.html`)
 * Let's add toolbar in `material table`
   ```html
@@ -57,4 +61,5 @@ Using 3rd Party Libraries
         })
     }
   }
+  ...
   ```
