@@ -1,0 +1,10 @@
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Email</th>
+  </tr>
+  <tr v-for="(profile, index) in profiles" v-bind:key="index">
+    <td>{{ profile.name }}</td>
+    <td>{{ profile.email }}</td>
+  </tr>
+</table>  
