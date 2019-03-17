@@ -27,3 +27,15 @@ Vue (pronounced /vjuː/, like view), is a javascript library to create reactive 
   * Great for controlling DOM, like for instance if you want to dynamically render list of data
   * Can create Single Page Application
 
+
+Table of Contents
+------------
+* Getting Started (Vue JS `Hello World`)
+* Events and Methods
+* Data Bindings
+* Conditions, Arrays and List
+* Vue CLI and .vue files
+* Components and vue files
+* Using 3 Party Libraries
+* Routes
+* Bundle your Project
